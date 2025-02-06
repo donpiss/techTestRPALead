@@ -7,7 +7,7 @@ def main():
     rev = int(rev)
     dif = abs(int(num) - rev)
 
-    print(f"Result: {num)}")
+    print(f"Result: {num}")
     print(f"Reverse: {rev}, Difference: {dif}")
 
 if "__main__" == __name__:
