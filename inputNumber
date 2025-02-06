@@ -2,12 +2,12 @@ def main():
     print("Number: ", end='')
     num = input()
 
-    num = ''.join(filter(str.isdigit, num))
+    num = ''.join(filter(str.isdigit, num.lstrip('0')))
     rev = num[::-1]
     rev = int(rev)
     dif = abs(int(num) - rev)
 
-    print(f"Result: {num}")
+    print(f"Result: {num.lstrip('0')}")
     print(f"Reverse: {rev}, Difference: {dif}")
 
 if "__main__" == __name__:
